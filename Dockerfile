@@ -1,7 +1,8 @@
-FROM node:16.20.2
+FROM alpine:3.15
 WORKDIR /app
 COPY . /app
-RUN npm install
+RUN apk update
+RUN apk add nodejs npm
 RUN npm run build
 EXPOSE 3000
-CMD ['npm run start']
+CMD ["npm", "run", "start"]
