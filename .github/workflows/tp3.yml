@@ -1,4 +1,4 @@
-ename : Tp3
+name : Tp3
 on:
   push:
     branches:
