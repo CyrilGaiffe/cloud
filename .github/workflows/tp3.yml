@@ -1,4 +1,4 @@
-name : Tp3
+ename : Tp3
 on:
   push:
     branches:
@@ -25,4 +25,4 @@ jobs:
       run: |
         npm run build
         npm test
-    - run: echo "Built and tested
+    - run: echo "Built and tested"
