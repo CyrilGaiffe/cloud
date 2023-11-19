@@ -16,12 +16,15 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18'
+      - run: echo "Setup Node"
 
     - name: Install dependencies
       run: |
         npm install
+      - run: echo "Installed the dependencies
 
     - name: Build and Test
       run: |
         npm run build
         npm test
+    - run: echo "Built and tested
